@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.box{
+    
+    width: 600px;
+    box-shadow: 1px 0px 10px gray;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 0.5px;
+    background-color: rgb(249, 167, 14);
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+
+}
+.box1{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+}
+@media (max-width : 609px) {
+    .box{
+        width: 80%;
+        text-align: center;
+    }
+}
+@media (max-width : 487px) {
+    
+    .box1{
+        
+        flex-direction: column;
+    }
+    input{
+        width: 80%;
+    }
+}
+#input{
+    padding: 10px;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 18px;
+    color: green;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+button{
+    padding: 9px 13px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    color: green;
+    font-weight: 600;
+
+}
+button:hover{
+    background-color: rgb(156, 207, 227);
+    transition: all 0.8s;
+}
+
+.child{
+    width: 100%;
+    padding: 5px;
+    color: white;
+    font-weight: 600;
+    margin: 10px;
+    text-align: start;
+}
+.voice{
+    font-size: 20px;
+}
+
+#audioTag{
+   
+   padding: 5px;
+   position: relative;
+   top: 20px;
+   visibility:hidden;
+  
+   
+}
+@media (max-width:500px) {
+    #audioTag{
+        width: 60%;
+    }
+}
