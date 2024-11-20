@@ -1,58 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     height: 100vh;
     width: 100wh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
+
+
 }
-.box{
-    
+
+.box {
+
     width: 600px;
+    height: 350px;
     box-shadow: 1px 0px 10px gray;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     font-size: 18px;
     font-family: monospace;
     letter-spacing: 0.5px;
     background-color: rgb(249, 167, 14);
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    
+
 
 
 }
-.box1{
+
+.box1 {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
-@media (max-width : 609px) {
-    .box{
-        width: 80%;
-        text-align: center;
+
+@media (max-width : 610px) {
+    .box {
+        height: auto;
     }
 }
+
+@media (max-width : 609px) {
+    .box {
+
+        text-align: center;
+        margin: auto;
+    }
+}
+
 @media (max-width : 487px) {
-    
-    .box1{
-        
+
+    .box1 {
+
         flex-direction: column;
     }
-    input{
-        width: 80%;
+
+    input {
+        width: 90%;
     }
 }
-#input{
+
+#input {
     padding: 10px;
-    width: 60%;
+
     border: none;
     outline: none;
     border-radius: 8px;
@@ -62,7 +77,8 @@
     letter-spacing: 1.5px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-button{
+
+button {
     padding: 9px 13px;
     border: none;
     outline: none;
@@ -74,12 +90,13 @@ button{
     font-weight: 600;
 
 }
-button:hover{
+
+button:hover {
     background-color: rgb(156, 207, 227);
     transition: all 0.8s;
 }
 
-.child{
+.child {
     width: 100%;
     padding: 5px;
     color: white;
@@ -87,21 +104,32 @@ button:hover{
     margin: 10px;
     text-align: start;
 }
-.voice{
+
+.voice {
     font-size: 20px;
 }
 
-#audioTag{
-   
-   padding: 5px;
-   position: relative;
-   top: 20px;
-   visibility:hidden;
-  
-   
+#audioTag {
+
+    padding: 5px;
+    position: relative;
+    top: 20px;
+    /* visibility:hidden; */
+
+
+
+
 }
-@media (max-width:500px) {
-    #audioTag{
-        width: 60%;
+
+@media (max-width:497px) {
+    #audioTag {
+        width: 95%;
+    }
+}
+
+@media (max-width :264px) {
+    #audioTag {
+        position: relative;
+        top: 10px;
     }
 }
